@@ -32,7 +32,6 @@ enum custom_keycodes {
 #define KC_P_US PSEUDO_US
 #define KC_SPCT CTL_T(KC_SPC)
 #define KC_ENSF SFT_T(KC_ENT)
-#define KC_SFTA SFT_T(KC_A)
 #define KC_CTSF S(KC_LCTL)
 #define KC_IMON ALT_T(KC_F13)
 #define KC_IMOF GUI_T(KC_F14)
@@ -53,9 +52,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
      ESC , Q  , W  , E  , R  , T  ,                 Y  , U  , I  , O  , P  ,DEL ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
-     TAB ,SFTA, S  , D  , F  , G  ,LPRN,      RPRN, H  , J  , K  , L  ,SCLN,BSPC,
+     TAB , A  , S  , D  , F  , G  ,LPRN,      RPRN, H  , J  , K  , L  ,SCLN,BSPC,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-     CTSF, Z  , X  , C  , V  , B  ,LBRC,      RBRC, N  , M  ,COMM,DOT ,SLSH,QUOT,
+     LSFT, Z  , X  , C  , V  , B  ,LBRC,      RBRC, N  , M  ,COMM,DOT ,SLSH,QUOT,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
                          IMOF,LWR ,SPCT,      ENSF,RSE ,IMON
   //                    +----+----+---/       \---+----+----+
@@ -89,9 +88,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----+               +----+----+----+----+----+----.
      ESC , Q  , W  , E  , R  , T  ,                 Y  , U  , I  , O  , P  ,DEL ,
   //|----+----+----+----+----+----+----+     +----+----+----+----+----+----+----|
-     TAB ,SFTA, S  , D  , F  , G  ,ASTR,      LPRN, H  , J  , K  , L  ,FN0 ,BSPC,
+     TAB , A  , S  , D  , F  , G  ,ASTR,      LPRN, H  , J  , K  , L  ,FN0 ,BSPC,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-     CTSF, Z  , X  , C  , V  , B  ,FN0 ,      FN0 , N  , M  ,COMM,DOT ,SLSH,FN0 ,
+     LSFT, Z  , X  , C  , V  , B  ,FN0 ,      FN0 , N  , M  ,COMM,DOT ,SLSH,FN0 ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
                          IMOF,P_LW,SPCT,      ENSF,P_RS,IMON
   //                    +----+----+---/       \---+----+----+
