@@ -28,7 +28,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID      0x0059
 #define DEVICE_VER      0x0100
 #define MANUFACTURER    SatT
-#define PRODUCT         Caravelle-BLE
 #define DESCRIPTION     Firmware for Caravelle-BLE keyboard
 
 /* key matrix size */
