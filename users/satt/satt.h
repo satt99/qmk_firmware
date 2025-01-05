@@ -28,8 +28,7 @@ enum custom_keycodes {
 };
 
 // Special keycodes
-#define SPC_CTL CTL_T(KC_SPC)
-#define TB_CTSF C_S_T(KC_TAB)
+#define TAB_CTL CTL_T(KC_TAB)
 #define CTALDEL LCA(KC_DEL)
 #define GUI_E LGUI(KC_E)
 #define GUI_R LGUI(KC_R)
