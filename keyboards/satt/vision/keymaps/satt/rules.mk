@@ -1,1 +1,1 @@
-SRC += action_pseudo.c
+TRI_LAYER_ENABLE = yes
