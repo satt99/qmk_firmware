@@ -65,8 +65,15 @@ if [ "$RUNTIME" = "docker" ]; then
 	uid_arg="--user $(id -u):$(id -g)"
 fi
 
+# Set -it for interactive shells
+if [ -t 1 ]; then
+	DOCKER_TTY_ARGS="-it"
+else
+	DOCKER_TTY_ARGS=""
+fi
+
 # Run container and build firmware
-"$RUNTIME" run --rm -it \
+"$RUNTIME" run --rm $DOCKER_TTY_ARGS \
 	$usb_args \
 	$uid_arg \
 	-w /qmk_firmware \
