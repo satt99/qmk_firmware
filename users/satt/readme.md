@@ -1,4 +1,4 @@
-Copyright 2024 SatT @satt99
+Copyright 2025 SatT @satt99
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -14,9 +14,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-## Pseudo US Layout
-
-On a Japanese Windows environment, ANSI keyboards may be recognized wrongly as a JIS keyboard.
+## Pseudo US Overrides
+On a Japanese environment, ANSI keyboards may be recognized wrongly as a JIS keyboard.
 By using this code, you can use your ANSI keyboard under a JIS keyboard environment without changing the settings and registry of your environment.
-
-Original code by [Eswai](https://github.com/eswai/qmk_firmware/tree/master/keyboards/eswai/anhedral67/keymaps/srlby2) & [tttza](https://github.com/tttza/qmk_firmware/tree/custom/lily58/keyboards/lily58/keymaps/via_tttza)

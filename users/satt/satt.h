@@ -8,23 +8,19 @@
 
 // Prototypes
 bool process_record_keymap(uint16_t keycode, keyrecord_t *record);
-void load_persistent(void);
-void save_persistent(void);
-void set_keyboard_lang_to_jis(bool);
 
 // Layer names
 enum layer_names {
-  _QWERTY = 0,
-  _LOWER,
-  _RAISE,
-  _ADJUST
+    _QWERTY = 0,
+    _LOWER,
+    _RAISE,
+    _ADJUST,
 };
 
 // Custom keycodes
 enum custom_keycodes {
-  CK_EnJIS = QK_USER,
-  CK_EnUS,
-  ZKHK
+    ZKHK = QK_USER,
+    KO_STAT,
 };
 
 // Special keycodes
@@ -41,9 +37,8 @@ enum custom_keycodes {
 typedef union {
     uint32_t raw;
     struct {
-        bool jis    :1;
+        bool key_override : 1;
     };
 } user_config_t;
-
 
 #endif

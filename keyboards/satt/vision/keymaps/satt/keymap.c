@@ -19,6 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "satt.h"
 
 const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+    // clang-format off
 
 	[_QWERTY] = LAYOUT(
         GUI_E,   KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,             KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_DEL,  KC_DEL,
@@ -42,9 +43,9 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 	[_ADJUST] = LAYOUT(
-        QK_BOOT, CK_EnJIS,KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,            KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
-        _______, CK_EnUS, _______, _______, _______, _______, _______,          _______, _______, _______, _______, _______, _______,
-                 _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        QK_BOOT, KO_ON,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,            KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,
+        _______, KO_OFF,  _______, _______, _______, _______, _______,          _______, _______, _______, _______, _______, _______,
+                 KO_STAT, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
                  _______,                   _______, _______, _______, _______, _______, _______,                            _______
     )
 };

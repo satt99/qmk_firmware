@@ -1,5 +1,5 @@
 SRC += $(USER_PATH)/satt.c
-SRC += $(USER_PATH)/twpair_on_jis.c
+INTROSPECTION_KEYMAP_C = $(USER_PATH)/override_jis2us.c
 
-# OS detection
 OS_DETECTION_ENABLE = yes
+KEY_OVERRIDE_ENABLE = yes
